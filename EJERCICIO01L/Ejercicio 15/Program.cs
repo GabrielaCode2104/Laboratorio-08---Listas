@@ -11,12 +11,10 @@ class Program
 
         Console.WriteLine("Números primos ordenados: " + string.Join(", ", numerosPrimosOrdenados));
     }
-
     static List<int> EncontrarNumerosPrimos(List<int> numeros)
     {
         return numeros.Where(n => IsPrime(n)).ToList();
     }
-
     static bool IsPrime(int numero)
     {
         if (numero <= 1) return false;
@@ -28,7 +26,6 @@ class Program
             if (numero % i == 0)
                 return false;
         }
-
         return true;
     }
 }
