@@ -1,6 +1,4 @@
-﻿// 5.Escriba una función que reciba dos conjuntos de números y
-// devuelva un conjunto con los números que están en el primer conjunto pero no en el segundo. 
-
+﻿// 5.Escriba una función que reciba dos conjuntos de números y devuelva un conjunto con los números que están en el primer conjunto pero no en el segundo. 
 class Program
 {
     static void Main()
@@ -16,7 +14,6 @@ class Program
             Console.WriteLine(numero);
         }
     }
-
     static List<int> LeerConjunto(string mensaje)
     {
         Console.Write(mensaje);
@@ -30,10 +27,8 @@ class Program
                 conjunto.Add(numero);
             }
         }
-
         return conjunto;
     }
-
     static IEnumerable<int> DiferenciaConjuntos(IEnumerable<int> conj1, IEnumerable<int> conj2)
     {
         return conj1.Except(conj2);
